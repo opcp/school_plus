@@ -1,0 +1,21 @@
+@import './scss/variable';
+@import './scss/extend';
+@import './scss/Navbar';
+@import './scss/Map';
+@import './scss/SearchBar';
+@import './scss/Swiper';
+@import './scss/Hot_School.scss';
+@import './scss/_Hot_Country.scss';
+@import './scss/_Footer.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
+  box-sizing: border-box;
+}
+
+#line {
+  background: #000;
+}

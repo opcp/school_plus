@@ -1,0 +1,103 @@
+%search-option {
+  outline: 0;
+  letter-spacing: 1px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+%search_schoolIcon {
+  width: 25px;
+  height: 40px;
+  margin: 0 8px 5px 0;
+}
+
+.search {
+  background: $bg-color;
+  max-width: $all-width;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 100px;
+  z-index: 95;
+  .container {
+    width: $body-width;
+    display: flex;
+    padding: 15px 0;
+    ul {
+      margin: 0;
+      li {
+        margin-right: 15px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .title {
+        color: #fff;
+        background-color: $search-color;
+        width: 125px;
+        height: 43px;
+        text-align: center;
+        line-height: 43px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin: 0 15px 0 0;
+      }
+      .or {
+        color: #fff;
+      }
+      .search_schoolIcon {
+        @extend %search_schoolIcon;
+      }
+      input {
+        @extend %search-option;
+        background-color: transparent;
+        padding: 10px 20px 10px 10px;
+        &:hover {
+          background-color: #444;
+          border: 1px solid #f28618;
+        }
+        &::placeholder {
+          color: #fff;
+        }
+        &:focus::placeholder {
+          color: #ccc;
+        }
+      }
+
+      select {
+        @extend %search-option;
+        background: $bg-color;
+        padding: 0px 20px 0px 10px;
+        width: 250px;
+        height: 43px;
+        &:hover {
+          background-color: #444;
+          border: 1px solid #f28618;
+        }
+        &:focus {
+          background-color: #444;
+          border: 1px solid #f28618;
+        }
+      }
+      button {
+        width: 135px;
+        border-radius: 5px;
+        border: 1px solid $search-color;
+        font-weight: bold;
+        background-color: #f28618;
+        color: #fff;
+        height: 44px;
+        letter-spacing: 5px;
+        padding: 3px 0 0 0;
+        img {
+          @extend %search_schoolIcon;
+          height: 80%;
+          width: 18px;
+          margin: auto 8px;
+        }
+        &:hover {
+          background-color: #444;
+        }
+      }
+    }
+  }
+}

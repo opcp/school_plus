@@ -1,0 +1,73 @@
+.map {
+  @extend %View;
+  background: #023c61;
+  height: 500px;
+  position: relative;
+  margin-top: 100px;
+  .info-bar {
+    position: absolute;
+    top: 5px;
+    right: 390px;
+    display: flex;
+    max-width: 390px;
+    width: 100%;
+    li {
+      color: white;
+      font-size: 16px;
+      span {
+        font-size: 24px;
+        color: #fff;
+      }
+      .circle {
+        margin: 0 5px;
+        width: 8px;
+        vertical-align: text-bottom;
+        color: #ff9f19;
+      }
+    }
+    .review {
+      display: inline-flex;
+      border: 1px solid #ff9f19;
+      border-radius: 18px;
+      max-width: 110px;
+      width: 100%;
+      margin-top: auto;
+      padding: 5px;
+      img {
+        height: 20px;
+        width: 20px;
+        vertical-align: text-bottom;
+      }
+      span {
+        font-size: 16px;
+        padding-left: 5px;
+        cursor: pointer;
+        &:hover {
+          color: $txt-color;
+        }
+      }
+    }
+  }
+  .slogan {
+    position: absolute;
+    bottom: 20px;
+    left: 380px;
+    .title {
+      font-size: 60px;
+      color: #fff;
+      height: 72px;
+    }
+    p {
+      height: 43px;
+      font-size: 36px;
+      margin: 0;
+      color: #fff;
+    }
+  }
+}
+.mid {
+  width: $body-width;
+}
+.map-logo #line #IRELAND {
+  fill: #ffcc1a;
+}
