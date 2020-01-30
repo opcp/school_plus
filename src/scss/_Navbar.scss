@@ -152,51 +152,51 @@ nav {
   }
 }
 
-.search_country {
-  position: absolute;
-  background-color: #333333ad;
-  height: 180px;
-  width: $all-width;
-  top: 100px;
-  left: -500px;
-  padding-top: 10px;
-  ul {
-    display: flex;
-    width: $body-width;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    li {
-      width: 175px;
-      height: 70px;
-      border-radius: 10px;
-      margin: 0 10px 10px 0;
-      .flag {
-        img {
-          width: 60px;
-          height: 50px;
-        }
-      }
-      .flagtext {
-        display: flex;
-        flex-direction: column;
-        a {
-          padding: 0;
-          line-height: 1;
-        }
-        span {
-          color: #666666;
-          font-size: 12px;
-        }
-      }
-    }
-  }
-  .malta {
-    width: 175px;
-    &::after {
-      content: '';
-      width: 16px;
-      height: 70px;
-      background: transparent;
-    }
-  }
+// .search_country {
+//   position: absolute;
+//   background-color: #333333ad;
+//   height: 180px;
+//   width: $all-width;
+//   top: 100px;
+//   left: -500px;
+//   padding-top: 10px;
+//   ul {
+//     display: flex;
+//     width: $body-width;
+//     flex-wrap: wrap;
+//     margin: 0 auto;
+//     li {
+//       width: 175px;
+//       height: 70px;
+//       border-radius: 10px;
+//       margin: 0 10px 10px 0;
+//       .flag {
+//         img {
+//           width: 60px;
+//           height: 50px;
+//         }
+//       }
+//       .flagtext {
+//         display: flex;
+//         flex-direction: column;
+//         a {
+//           padding: 0;
+//           line-height: 1;
+//         }
+//         span {
+//           color: #666666;
+//           font-size: 12px;
+//         }
+//       }
+//     }
+//   }
+//   .malta {
+//     width: 175px;
+//     &::after {
+//       content: '';
+//       width: 16px;
+//       height: 70px;
+//       background: transparent;
+//     }
+//   }
 }

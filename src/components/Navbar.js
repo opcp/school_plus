@@ -46,7 +46,7 @@ const Navbar = () => {
                 {`國家搜尋`}
               </a>
               <img src={arrow_d} />
-              {Nav.country ? (
+              {/* {Nav.country ? (
                 <div className="search_country">
                   <ul>
                     <li>
@@ -118,7 +118,7 @@ const Navbar = () => {
                 </div>
               ) : (
                 ""
-              )}
+              )} */}
             </li>
             <li>
               <a className="navTitle" href="#">
