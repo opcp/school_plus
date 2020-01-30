@@ -1,34 +1,34 @@
-import React, { useState } from 'react'
-import logo from '../image/logo.svg'
-import arrow_d from '../image/icon-arrow-d.svg'
-import login from '../image/icon-login.svg'
+import React, { useState } from "react";
+import logo from "../image/logo.svg";
+import arrow_d from "../image/icon-arrow-d.svg";
+import login from "../image/icon-login.svg";
 
 const Navbar = () => {
   const [Nav, blockNav] = useState({
-    country: false,
     more: false,
     info: false,
-  })
+    country: false
+  });
   const country_handler = () => {
-    blockNav({ country: true })
-  }
+    blockNav({ country: true });
+  };
   const country_handler2 = () => {
-    blockNav({ country: false })
-  }
+    blockNav({ country: false });
+  };
 
   const more_handler = () => {
-    blockNav({ more: true })
-  }
+    blockNav({ more: true });
+  };
   const more_handler2 = () => {
-    blockNav({ more: false })
-  }
+    blockNav({ more: false });
+  };
 
   const info_handler = () => {
-    blockNav({ info: true })
-  }
+    blockNav({ info: true });
+  };
   const info_handler2 = () => {
-    blockNav({ info: false })
-  }
+    blockNav({ info: false });
+  };
   return (
     <>
       <header>
@@ -42,7 +42,7 @@ const Navbar = () => {
           <ul className="nav">
             <li onMouseEnter={country_handler} onMouseLeave={country_handler2}>
               <a className="navTitle" href="#">
-                {' '}
+                {" "}
                 {`國家搜尋`}
               </a>
               <img src={arrow_d} />
@@ -51,100 +51,100 @@ const Navbar = () => {
                   <ul>
                     <li>
                       <div className="flag">
-                        <img src={require('../image/logo/00.png')} />
+                        <img src={require("../image/logo/00.png")} />
                       </div>
                       <div className="flagtext">
-                        <a href="#">{'菲律賓'}</a>
+                        <a href="#">{"菲律賓"}</a>
                         <span>PHILIPPINE</span>
                       </div>
                     </li>
                     <li>
                       <div className="flag">
                         <img
-                          src={require('../image/logo/888197_flag_512x512.png')}
+                          src={require("../image/logo/888197_flag_512x512.png")}
                         />
                       </div>
                       <div className="flagtext">
-                        <a href="#">{'澳洲'}</a>
+                        <a href="#">{"澳洲"}</a>
                         <span>AUSTRALIA</span>
                       </div>
                     </li>
                     <li>
                       <div className="flag">
-                        <img src={require('../image/logo/japan_flag2.png')} />
+                        <img src={require("../image/logo/japan_flag2.png")} />
                       </div>
                       <div className="flagtext">
-                        <a href="#">{'日本'}</a>
+                        <a href="#">{"日本"}</a>
                         <span>JAPAN</span>
                       </div>
                     </li>
                     <li>
                       <div className="flag">
-                        <img src={require('../image/logo/Korea_flag2.png')} />
+                        <img src={require("../image/logo/Korea_flag2.png")} />
                       </div>
                       <div className="flagtext">
-                        <a href="#">{'韓國'}</a>
+                        <a href="#">{"韓國"}</a>
                         <span>KOREA</span>
                       </div>
                     </li>
                     <li>
                       <div className="flag">
-                        <img src={require('../image/logo/ireland.png')} />
+                        <img src={require("../image/logo/ireland.png")} />
                       </div>
                       <div className="flagtext">
-                        <a href="#">{'愛爾蘭'}</a>
+                        <a href="#">{"愛爾蘭"}</a>
                         <span>IRELAND</span>
                       </div>
                     </li>
                     <li>
                       <div className="flag">
-                        <img src={require('../image/logo/canada_flag.png')} />
+                        <img src={require("../image/logo/canada_flag.png")} />
                       </div>
                       <div className="flagtext">
-                        <a href="#">{'加拿大'}</a>
+                        <a href="#">{"加拿大"}</a>
                         <span>CANADA</span>
                       </div>
                     </li>
                     <li className="malta">
                       <div className="flag">
-                        <img src={require('../image/logo/Malta_flag.png')} />
+                        <img src={require("../image/logo/Malta_flag.png")} />
                       </div>
                       <div className="flagtext">
-                        <a href="#">{'馬爾他'}</a>
+                        <a href="#">{"馬爾他"}</a>
                         <span>MALTA</span>
                       </div>
                     </li>
                   </ul>
                 </div>
               ) : (
-                ''
+                ""
               )}
             </li>
             <li>
               <a className="navTitle" href="#">
-                {' '}
-                {'語言搜尋'}
+                {" "}
+                {"語言搜尋"}
               </a>
               <img src={arrow_d} />
             </li>
             <li>
               <a className="navTitle" href="#">
-                {' '}
-                {'條件式搜尋'}
+                {" "}
+                {"條件式搜尋"}
               </a>
               <img src={arrow_d} />
             </li>
             <li>
               <a className="navTitle" href="#">
-                {' '}
-                {'報名流程'}
+                {" "}
+                {"報名流程"}
               </a>
               <img src={arrow_d} />
             </li>
             <li onMouseEnter={info_handler} onMouseLeave={info_handler2}>
               <a className="navTitle" href="#">
-                {' '}
-                {'遊學資訊'}
+                {" "}
+                {"遊學資訊"}
               </a>
               <img src={arrow_d} />
               {Nav.info ? (
@@ -160,12 +160,12 @@ const Navbar = () => {
                   </li>
                 </ul>
               ) : (
-                ''
+                ""
               )}
             </li>
             <li onMouseEnter={more_handler} onMouseLeave={more_handler2}>
               <a className="navTitle" href="#">
-                {'更多'}
+                {"更多"}
               </a>
               <img src={arrow_d} />
               {Nav.more ? (
@@ -178,46 +178,46 @@ const Navbar = () => {
                   </li>
                 </ul>
               ) : (
-                ''
+                ""
               )}
             </li>
           </ul>
           <ul className="header-member">
             <li>
               <img src={login} />
-              {'會員中心'}
+              {"會員中心"}
             </li>
-            <li>{'我的學校清單'}</li>
+            <li>{"我的學校清單"}</li>
           </ul>
         </div>
       </header>
       <nav>
         <ul>
           <li className="fb_icon">
-            <img className="fb" src={require('../image/icon-circle-fb.svg')} />
+            <img className="fb" src={require("../image/icon-circle-fb.svg")} />
           </li>
           <li>
             <img
               className="line"
-              src={require('../image/icon-circle-line.svg')}
+              src={require("../image/icon-circle-line.svg")}
             />
           </li>
           <li>
             <img
               className="ig"
-              src={require('../image/icon-circle-instagram.svg')}
+              src={require("../image/icon-circle-instagram.svg")}
             />
           </li>
           <li>
             <img
               className="wechat"
-              src={require('../image/icon-circle-wechat.svg')}
+              src={require("../image/icon-circle-wechat.svg")}
             />
           </li>
         </ul>
       </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
