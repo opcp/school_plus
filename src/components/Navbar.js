@@ -5,9 +5,16 @@ import login from '../image/icon-login.svg'
 
 const Navbar = () => {
   const [Nav, blockNav] = useState({
+    country: false,
     more: false,
     info: false,
   })
+  const country_handler = () => {
+    blockNav({ country: true })
+  }
+  const country_handler2 = () => {
+    blockNav({ country: false })
+  }
 
   const more_handler = () => {
     blockNav({ more: true })
@@ -33,24 +40,112 @@ const Navbar = () => {
           </div>
 
           <ul className="nav">
+            <li onMouseEnter={country_handler} onMouseLeave={country_handler2}>
+              <a className="navTitle" href="#">
+                {' '}
+                {`國家搜尋`}
+              </a>
+              <img src={arrow_d} />
+              {Nav.country ? (
+                <div className="search_country">
+                  <ul>
+                    <li>
+                      <div className="flag">
+                        <img src={require('../image/logo/00.png')} />
+                      </div>
+                      <div className="flagtext">
+                        <a href="#">{'菲律賓'}</a>
+                        <span>PHILIPPINE</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flag">
+                        <img
+                          src={require('../image/logo/888197_flag_512x512.png')}
+                        />
+                      </div>
+                      <div className="flagtext">
+                        <a href="#">{'澳洲'}</a>
+                        <span>AUSTRALIA</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flag">
+                        <img src={require('../image/logo/japan_flag2.png')} />
+                      </div>
+                      <div className="flagtext">
+                        <a href="#">{'日本'}</a>
+                        <span>JAPAN</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flag">
+                        <img src={require('../image/logo/Korea_flag2.png')} />
+                      </div>
+                      <div className="flagtext">
+                        <a href="#">{'韓國'}</a>
+                        <span>KOREA</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flag">
+                        <img src={require('../image/logo/ireland.png')} />
+                      </div>
+                      <div className="flagtext">
+                        <a href="#">{'愛爾蘭'}</a>
+                        <span>IRELAND</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flag">
+                        <img src={require('../image/logo/canada_flag.png')} />
+                      </div>
+                      <div className="flagtext">
+                        <a href="#">{'加拿大'}</a>
+                        <span>CANADA</span>
+                      </div>
+                    </li>
+                    <li className="malta">
+                      <div className="flag">
+                        <img src={require('../image/logo/Malta_flag.png')} />
+                      </div>
+                      <div className="flagtext">
+                        <a href="#">{'馬爾他'}</a>
+                        <span>MALTA</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              ) : (
+                ''
+              )}
+            </li>
             <li>
-              <a href="#"> {`國家搜尋`}</a>
+              <a className="navTitle" href="#">
+                {' '}
+                {'語言搜尋'}
+              </a>
               <img src={arrow_d} />
             </li>
             <li>
-              <a href="#"> {'語言搜尋'}</a>
+              <a className="navTitle" href="#">
+                {' '}
+                {'條件式搜尋'}
+              </a>
               <img src={arrow_d} />
             </li>
             <li>
-              <a href="#"> {'條件式搜尋'}</a>
-              <img src={arrow_d} />
-            </li>
-            <li>
-              <a href="#"> {'報名流程'}</a>
+              <a className="navTitle" href="#">
+                {' '}
+                {'報名流程'}
+              </a>
               <img src={arrow_d} />
             </li>
             <li onMouseEnter={info_handler} onMouseLeave={info_handler2}>
-              <a href="#"> {'遊學資訊'}</a>
+              <a className="navTitle" href="#">
+                {' '}
+                {'遊學資訊'}
+              </a>
               <img src={arrow_d} />
               {Nav.info ? (
                 <ul className="school_info">
@@ -69,7 +164,9 @@ const Navbar = () => {
               )}
             </li>
             <li onMouseEnter={more_handler} onMouseLeave={more_handler2}>
-              <a href="#">{'更多'}</a>
+              <a className="navTitle" href="#">
+                {'更多'}
+              </a>
               <img src={arrow_d} />
               {Nav.more ? (
                 <ul className="more_info">
