@@ -167,23 +167,24 @@ header {
   background-color: $bg-color;
   top: 0px;
   right: 0px;
-  transition: 2s;
+  transition: 1s;
+  transform: translateX(250px);
   .mobile_menu_bar {
     display: flex;
     flex-direction: column;
-    li{
+    li {
       border-bottom: 1px solid white;
       height: 40px;
       padding: 10px 10px 10px 15px;
-      .mobil_menu_arrow{
+      .mobil_menu_arrow {
         width: 20px;
         height: 18px;
         border-radius: 50%;
         background: $txt-color;
         color: $bg-color;
-        vertical-align:-3px;
+        vertical-align: -3px;
       }
-      span{
+      span {
         padding-left: 10px;
         color: #fff;
         font-size: 16px;
@@ -197,12 +198,12 @@ header {
       .mobile_menu_border {
         position: absolute;
         right: 10px;
-        top:10px;
+        top: 10px;
         width: 36px;
         height: 36px;
         border-radius: 5px;
         background: $txt-color;
-        
+
         span {
           position: absolute;
           top: 45%;
@@ -211,7 +212,7 @@ header {
           height: 3px;
           background-color: white;
           transform: rotate(45deg);
-          &::after{
+          &::after {
             content: '';
             position: absolute;
             top: 0;
@@ -225,6 +226,9 @@ header {
       }
     }
   }
+}
+.menu_open {
+  transform: translateX(0px);
 }
 nav {
   position: fixed;

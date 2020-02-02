@@ -33,7 +33,7 @@ const Navbar = () => {
     blockNav({ info: false })
   }
   const mobile_menu_open2 = () => {
-    blockNav({ mobile_menu: true }) 
+    blockNav({ mobile_menu: true })
   }
   const mobile_menu_close2 = () => {
     blockNav({ mobile_menu: false })
@@ -213,80 +213,76 @@ const Navbar = () => {
             <span className="mobile_line"></span>
           </div>
         </div>
-        {Nav.mobile_menu ? (
-          <div className="mobile_menu_open">
-            <ul className="mobile_menu_bar">
-              <li className="mobile_menu_close">
-                <div
-                  onClick={mobile_menu_close2}
-                  className="mobile_menu_border"
-                >
-                  <span></span>
-                </div>
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  className="mobil_menu_arrow"
-                  icon={faAngleRight}
-                />
-                <span>國家搜尋</span>
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  className="mobil_menu_arrow"
-                  icon={faAngleRight}
-                />
-                <span>語言搜尋</span>
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  className="mobil_menu_arrow"
-                  icon={faAngleRight}
-                />
-                <span>條件式搜尋</span>
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  className="mobil_menu_arrow"
-                  icon={faAngleRight}
-                />
-                <span>報名流程</span>
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  className="mobil_menu_arrow"
-                  icon={faAngleRight}
-                />
-                <span>遊學資訊</span>
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  className="mobil_menu_arrow"
-                  icon={faAngleRight}
-                />
-                <span>學校比較</span>
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  className="mobil_menu_arrow"
-                  icon={faAngleRight}
-                />
-                <span>會員中心</span>
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  className="mobil_menu_arrow"
-                  icon={faAngleRight}
-                />
-                <span>聯絡我們</span>
-              </li>
-            </ul>
-          </div>
-        ) : (
-          ''
-        )}
+        <div
+          className={
+            Nav.mobile_menu ? 'mobile_menu_open menu_open' : 'mobile_menu_open '
+          }
+        >
+          <ul className="mobile_menu_bar">
+            <li className="mobile_menu_close">
+              <div onClick={mobile_menu_close2} className="mobile_menu_border">
+                <span></span>
+              </div>
+            </li>
+            <li>
+              <FontAwesomeIcon
+                className="mobil_menu_arrow"
+                icon={faAngleRight}
+              />
+              <span>國家搜尋</span>
+            </li>
+            <li>
+              <FontAwesomeIcon
+                className="mobil_menu_arrow"
+                icon={faAngleRight}
+              />
+              <span>語言搜尋</span>
+            </li>
+            <li>
+              <FontAwesomeIcon
+                className="mobil_menu_arrow"
+                icon={faAngleRight}
+              />
+              <span>條件式搜尋</span>
+            </li>
+            <li>
+              <FontAwesomeIcon
+                className="mobil_menu_arrow"
+                icon={faAngleRight}
+              />
+              <span>報名流程</span>
+            </li>
+            <li>
+              <FontAwesomeIcon
+                className="mobil_menu_arrow"
+                icon={faAngleRight}
+              />
+              <span>遊學資訊</span>
+            </li>
+            <li>
+              <FontAwesomeIcon
+                className="mobil_menu_arrow"
+                icon={faAngleRight}
+              />
+              <span>學校比較</span>
+            </li>
+            <li>
+              <FontAwesomeIcon
+                className="mobil_menu_arrow"
+                icon={faAngleRight}
+              />
+              <span>會員中心</span>
+            </li>
+            <li>
+              <FontAwesomeIcon
+                className="mobil_menu_arrow"
+                icon={faAngleRight}
+              />
+              <span>聯絡我們</span>
+            </li>
+          </ul>
+        </div>
       </header>
-
       <nav>
         <ul>
           <li className="fb_icon">
