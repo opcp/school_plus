@@ -12,7 +12,6 @@
 
 .search {
   background: $bg-color;
-  max-width: $all-width;
   width: 100%;
   display: flex;
   align-items: center;
@@ -21,15 +20,11 @@
   z-index: 95;
   .container {
     width: $body-width;
-    display: flex;
     padding: 15px 0;
     ul {
       margin: 0;
-      li {
-        margin-right: 15px;
-        display: inline-block;
-        vertical-align: middle;
-      }
+      display: inline-flex;
+      align-items: center;
       .title {
         color: #fff;
         background-color: $search-color;
@@ -41,8 +36,13 @@
         letter-spacing: 1px;
         margin: 0 15px 0 0;
       }
+      .inputText {
+        margin-right: 15px;
+        vertical-align: middle;
+      }
       .or {
         color: #fff;
+        padding: 0 10px 0 0;
       }
       .search_schoolIcon {
         @extend %search_schoolIcon;

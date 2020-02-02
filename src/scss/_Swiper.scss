@@ -21,8 +21,15 @@
 .carousel-indicators {
   position: absolute;
   bottom: -130px;
+  .active {
+    background-color: $search-color;
+  }
   li {
-    background-color: $bg-color;
+    background-color: rgba(102, 102, 102, 0.5);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 6px;
   }
 }
 .carousel-control-prev-icon {

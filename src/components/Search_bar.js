@@ -12,11 +12,11 @@ const Search_bar = () => {
             <img src={IconSchool} className='search_schoolIcon' />
             尋找學校</li>
             <li>
-              <input placeholder="輸入學校名稱"></input>
+              <input className='inputText' placeholder="輸入學校名稱"></input>
             </li>
             <li className='or' >{'或'}</li>
             <li>
-              <select>
+              <select className='inputText'>
                 <option>選擇留學國家</option>
                 <option>日本</option>
                 <option>韓國</option>
@@ -26,7 +26,7 @@ const Search_bar = () => {
               </select>
             </li>
             <li>
-              <select>
+              <select className='inputText'>
                 <option>選擇留學城市</option>
                 <option>日本</option>
                 <option>韓國</option>
@@ -35,7 +35,7 @@ const Search_bar = () => {
                 <option>澳洲</option>
               </select>
             </li>
-            <li>
+            <li className='search_btn'>
               <button>
               <img src={IconSearch} />
               {'搜尋'}

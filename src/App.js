@@ -7,19 +7,17 @@ import Hot_School from './components/Hot_School'
 import Hot_Country from './components/Hot_Country'
 import Footer from './components/Footer'
 
-
-
 const App = () => {
   return (
-   <>
-   <Navbar/>
-  <Map/>
-  <Search_bar/>
-  <Swipe/>
-  <Hot_School/>
-  <Hot_Country/>
-  <Footer/>
-   </>
+    <>
+      <Navbar />
+      <Map />
+      <Search_bar />
+      <Swipe />
+      <Hot_School />
+      <Hot_Country />
+      <Footer />
+    </>
   )
 }
 
