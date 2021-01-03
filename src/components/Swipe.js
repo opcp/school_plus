@@ -7,7 +7,8 @@ function Swipe() {
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex)
-    setDirection(e.direction)
+    console.log(e)
+    // setDirection(e.direction)
   }
   return (
     <>
